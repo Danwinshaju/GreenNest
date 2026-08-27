@@ -18,7 +18,7 @@ const ProductCard = ({ product }) => {
   const cartItem = cartItems.find(
     (item) => item.id === product.id
   );
-  const wishlist = useSelector((state) => state.wishlist.items);
+  const wishlist = useSelector((state) => state.wishlist?.items || []);
   const wished = wishlist.some((item) => item.id === product.id);
   const normalized = { ...product, name: product.name || product.title };
 

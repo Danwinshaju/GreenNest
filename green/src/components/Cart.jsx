@@ -10,7 +10,7 @@ import "./Cart.css";
 
 const Cart = () => {
   const dispatch = useDispatch();
-  const cartItems = useSelector((state) => state.cart.cartItems);
+  const cartItems = useSelector((state) => state.cart?.cartItems || []);
   const subtotal = cartItems.reduce(
     (sum, item) => sum + Number(item.price) * (item.quantity || 1),
     0

@@ -5,7 +5,7 @@ import { clearCart } from "../features/cart/cartSlice";
 import { apiRequest } from "../services/api";
 
 export default function Checkout() {
-  const items = useSelector((state) => state.cart.cartItems);
+  const items = useSelector((state) => state.cart?.cartItems || []);
   const dispatch = useDispatch();
   const [form, setForm] = useState({ name: "", email: "", phone: "", address: "", city: "", pincode: "" });
   const [status, setStatus] = useState({ loading: false, error: "", orderId: "" });

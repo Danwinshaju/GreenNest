@@ -1,5 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
-const saved = JSON.parse(localStorage.getItem("wishlistItems") || "[]");
+let saved = [];
+try {
+  const parsed = JSON.parse(localStorage.getItem("wishlistItems") || "[]");
+  saved = Array.isArray(parsed) ? parsed : [];
+} catch {
+  saved = [];
+}
 const slice = createSlice({ name: "wishlist", initialState: { items: saved }, reducers: {
   toggleWishlist(state, action) {
     const exists = state.items.some((item) => item.id === action.payload.id);

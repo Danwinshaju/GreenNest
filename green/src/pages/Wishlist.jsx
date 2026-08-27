@@ -4,7 +4,7 @@ import { addToCart } from "../features/cart/cartSlice";
 import { toggleWishlist } from "../features/wishlist/wishlistSlice";
 
 export default function Wishlist() {
-  const items = useSelector((state) => state.wishlist.items);
+  const items = useSelector((state) => state.wishlist?.items || []);
   const dispatch = useDispatch();
   return <main className="commerce-page"><h1>My Wishlist</h1><p>Saved items stay here on this device.</p>
     {!items.length ? <div className="empty-state">Your wishlist is empty.</div> : <div className="products-grid">{items.map((item) =>

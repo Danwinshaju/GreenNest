@@ -8,9 +8,9 @@ import { FaHeart, FaShoppingCart } from "react-icons/fa";
 const Navbar = () => {
   const navigate = useNavigate();
   const [query,setQuery]=useState("");
-  const cartItems = useSelector((state) => state.cart.cartItems);
+  const cartItems = useSelector((state) => state.cart?.cartItems || []);
   const cartCount = cartItems.reduce((total, item) => total + (item.quantity || 0), 0);
-  const wishlistCount = useSelector((state) => state.wishlist.items.length);
+  const wishlistCount = useSelector((state) => state.wishlist?.items?.length || 0);
 
   return (
     <>
