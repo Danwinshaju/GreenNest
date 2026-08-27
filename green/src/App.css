@@ -1,0 +1,51 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.commerce-page { max-width: 1180px; min-height: 55vh; margin: 0 auto; padding: 48px 24px; }
+.empty-state,.success-panel { padding: 48px; background:#f0fdf4; border-radius:20px; text-align:center; }
+.wish-button { position:absolute; right:14px; top:14px; z-index:2; border:0; width:40px; height:40px; border-radius:50%; background:white; font-size:24px; color:#166534; cursor:pointer; box-shadow:0 4px 14px #0002; }
+.wish-button.active { color:#dc2626; }
+.product-card { position:relative; }
+.card-actions { display:flex; gap:10px; flex-wrap:wrap; }
+.card-actions .secondary { background:#e5e7eb; color:#111827; }
+.checkout-layout { display:grid; place-items:center; }
+.checkout-form { width:min(100%,620px); display:grid; gap:16px; padding:32px; border-radius:22px; box-shadow:0 12px 40px #0001; }
+.checkout-form label { display:grid; gap:6px; text-transform:capitalize; }
+.checkout-form input { padding:13px; border:1px solid #d1d5db; border-radius:8px; }
+.checkout-form button { padding:14px; border:0; border-radius:9px; background:#15803d; color:white; font-weight:700; }
+.form-error { color:#b91c1c; }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

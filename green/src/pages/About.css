@@ -1,0 +1,160 @@
+.about-page{
+  background:#f8fff8;
+}
+
+/* HERO */
+.hero{
+  height:80vh;
+  background:url(../images/index/2.avif)
+  center/cover no-repeat;
+  position:relative;
+}
+
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.45);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+  padding:20px;
+}
+
+.hero-overlay h1{
+  font-size:4rem;
+  margin-bottom:20px;
+}
+
+.hero-overlay p{
+  max-width:700px;
+  font-size:1.2rem;
+}
+
+/* STORY */
+.story{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:50px;
+  padding:100px 10%;
+}
+
+.story-content{
+  flex:1;
+}
+
+.story-content h2{
+  color:#2e7d32;
+  font-size:2.5rem;
+  margin-bottom:20px;
+}
+
+.story-content p{
+  line-height:1.8;
+  color:#555;
+}
+
+.story-image{
+  flex:1;
+  font-size:12rem;
+  text-align:center;
+}
+
+/* STATS */
+.stats{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+  padding:60px 10%;
+  background:#2e7d32;
+}
+
+.stat{
+  text-align:center;
+  color:white;
+}
+
+.stat h3{
+  font-size:3rem;
+  margin-bottom:10px;
+}
+
+/* FEATURES */
+.features{
+  padding:100px 10%;
+}
+
+.features h2{
+  text-align:center;
+  color:#2e7d32;
+  font-size:2.5rem;
+  margin-bottom:50px;
+}
+
+.feature-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.feature-card{
+  background:white;
+  padding:40px 30px;
+  border-radius:20px;
+  text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+  transition:.3s;
+}
+
+.feature-card:hover{
+  transform:translateY(-10px);
+}
+
+.feature-card span{
+  font-size:3rem;
+}
+
+.feature-card h3{
+  margin:15px 0;
+  color:#2e7d32;
+}
+
+/* MISSION */
+.mission{
+  background:white;
+  padding:100px 10%;
+  text-align:center;
+}
+
+.mission h2{
+  color:#2e7d32;
+  font-size:2.5rem;
+  margin-bottom:20px;
+}
+
+.mission p{
+  max-width:800px;
+  margin:auto;
+  line-height:1.8;
+  color:#555;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+  .hero-overlay h1{
+    font-size:2.5rem;
+  }
+
+  .story{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .story-image{
+    font-size:8rem;
+  }
+}
