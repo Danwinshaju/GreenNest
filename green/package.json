@@ -1,5 +1,6 @@
 {
   "name": "green",
+  "homepage": "https://danwinshaju.github.io/GreenNest",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -2,6 +2,10 @@
 
 Full-stack plant e-commerce application with product browsing, search, persistent cart and wishlist, checkout/order creation, contact messages, and MongoDB persistence.
 
+## Live demo
+
+https://danwinshaju.github.io/GreenNest/
+
 ## Run locally
 
 1. Copy `backend/.env.example` to `backend/.env` and add a fresh MongoDB connection string.
