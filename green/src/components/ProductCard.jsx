@@ -6,6 +6,7 @@ import {
   decreaseQuantity,
 } from "../features/cart/cartSlice";
 import { toggleWishlist } from "../features/wishlist/wishlistSlice";
+import { FaHeart, FaRegHeart } from "react-icons/fa";
 
 const ProductCard = ({ product }) => {
   const dispatch = useDispatch();
@@ -25,7 +26,7 @@ const ProductCard = ({ product }) => {
   return (
     <div className="product-card">
       <button className={`wish-button ${wished ? "active" : ""}`} type="button" aria-label="Toggle wishlist" onClick={() => dispatch(toggleWishlist(normalized))}>
-        {wished ? "♥" : "♡"}
+        {wished ? <FaHeart aria-hidden="true" /> : <FaRegHeart aria-hidden="true" />}
       </button>
       <img src={product.img} alt={normalized.name} loading="lazy" decoding="async" />
 

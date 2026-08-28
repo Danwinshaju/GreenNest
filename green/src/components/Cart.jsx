@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import { FaShoppingCart } from "react-icons/fa";
 import {
   removeFromCart,
   increaseQuantity,
@@ -20,7 +21,7 @@ const Cart = () => {
     <div className="cart-page">
       <div className="cart-header">
         <div>
-          <h1>Your Cart 🛒</h1>
+          <h1>Your Cart <FaShoppingCart aria-hidden="true" /></h1>
           <p>Review your items and proceed to checkout.</p>
         </div>
         <span className="cart-badge">{cartItems.length} items</span>

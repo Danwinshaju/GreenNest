@@ -1,4 +1,5 @@
 import React from "react";
+import { FaLeaf, FaRecycle, FaSeedling, FaTruck } from "react-icons/fa";
 import "./About.css";
 
 const About = () => {
@@ -7,7 +8,7 @@ const About = () => {
 
       <section className="hero">
         <div className="hero-overlay">
-          <h1>Welcome to GreenNest 🌿</h1>
+          <h1>Welcome to GreenNest <FaLeaf aria-hidden="true" /></h1>
           <p>
             Bringing nature closer to every home with premium plants,
             seeds, pots, and gardening essentials.
@@ -27,7 +28,7 @@ const About = () => {
         </div>
 
         <div className="story-image">
-          🌱
+          <FaSeedling aria-hidden="true" />
         </div>
       </section>
 
@@ -58,19 +59,19 @@ const About = () => {
 
         <div className="feature-grid">
           <div className="feature-card">
-            <span>🌿</span>
+            <span><FaLeaf aria-hidden="true" /></span>
             <h3>Healthy Plants</h3>
             <p>Fresh and carefully nurtured plants.</p>
           </div>
 
           <div className="feature-card">
-            <span>🚚</span>
+            <span><FaTruck aria-hidden="true" /></span>
             <h3>Fast Delivery</h3>
             <p>Safe doorstep delivery across India.</p>
           </div>
 
           <div className="feature-card">
-            <span>♻️</span>
+            <span><FaRecycle aria-hidden="true" /></span>
             <h3>Eco Friendly</h3>
             <p>Sustainable packaging and products.</p>
           </div>

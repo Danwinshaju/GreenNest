@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaClock, FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import "./Contact.css";
 import { apiRequest } from "../services/api";
 const Contact = () => {
@@ -64,22 +65,22 @@ const Contact = () => {
             <h2>Get In Touch</h2>
 
             <div className="info-box">
-              <h3>📍 Address</h3>
+              <h3><FaMapMarkerAlt aria-hidden="true" /> Address</h3>
               <p>GreenNest Gardens, Coimbatore, Tamil Nadu, India</p>
             </div>
 
             <div className="info-box">
-              <h3>📞 Phone</h3>
+              <h3><FaPhoneAlt aria-hidden="true" /> Phone</h3>
               <p>Please use the contact form</p>
             </div>
 
             <div className="info-box">
-              <h3>📧 Email</h3>
+              <h3><FaEnvelope aria-hidden="true" /> Email</h3>
               <p>Available on request</p>
             </div>
 
             <div className="info-box">
-              <h3>🕒 Working Hours</h3>
+              <h3><FaClock aria-hidden="true" /> Working Hours</h3>
               <p>Monday - Saturday</p>
               <p>9:00 AM - 6:00 PM</p>
             </div>
