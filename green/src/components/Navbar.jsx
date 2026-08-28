@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import './Navbar.css'
-import { FaSearch } from "react-icons/fa";
-import { FaHeart, FaShoppingCart } from "react-icons/fa";
+import { FaHeart, FaLeaf, FaSearch, FaShoppingCart } from "react-icons/fa";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -16,7 +15,7 @@ const Navbar = () => {
     <>
       {/* Announcement Bar */}
       <div className="announce-bar">
-        🌿 Free shipping on orders above ₹499 | Use code{" "}
+        <FaLeaf aria-hidden="true" /> Free shipping on orders above ₹499 | Use code{" "}
         <strong>GROW10</strong> for 10% off your first order
       </div>
 
@@ -25,7 +24,7 @@ const Navbar = () => {
         <div className="header-inner">
           {/* Logo */}
           <Link className="logo" to="/">
-            <div className="logo-icon">🌿</div>
+            <div className="logo-icon" aria-hidden="true"><FaLeaf /></div>
             <span className="logo-text">GreenNest</span>
           </Link>
 

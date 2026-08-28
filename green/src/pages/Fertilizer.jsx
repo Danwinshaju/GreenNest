@@ -24,7 +24,7 @@ const Fertilizer = () => {
             <div className="product-card" key={item.id}>
               <WishlistButton product={item} />
               <div className="product-image">
-                <img src={item.img} alt={item.title} />
+                <img src={item.img} alt={item.title} loading="lazy" decoding="async" />
               </div>
 
               <div className="product-info">

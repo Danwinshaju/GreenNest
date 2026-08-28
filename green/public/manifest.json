@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "GreenNest",
+  "name": "GreenNest Plant Store",
   "icons": [
     {
       "src": "favicon.ico",
@@ -19,7 +19,10 @@
     }
   ],
   "start_url": ".",
+  "scope": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#1b4332",
+  "background_color": "#f8faf8",
+  "categories": ["shopping", "lifestyle"],
+  "lang": "en-IN"
 }

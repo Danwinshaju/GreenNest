@@ -27,7 +27,7 @@ const ProductCard = ({ product }) => {
       <button className={`wish-button ${wished ? "active" : ""}`} type="button" aria-label="Toggle wishlist" onClick={() => dispatch(toggleWishlist(normalized))}>
         {wished ? "♥" : "♡"}
       </button>
-      <img src={product.img} alt={product.name} />
+      <img src={product.img} alt={normalized.name} loading="lazy" decoding="async" />
 
       <div className="product-info">
         <h3>{product.name}</h3>

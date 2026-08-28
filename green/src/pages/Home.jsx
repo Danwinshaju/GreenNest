@@ -1,4 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { FaLeaf, FaSeedling, FaSun, FaTemperatureHigh, FaTint, FaTree } from 'react-icons/fa';
+import { GiFertilizerBag, GiFlowerPot } from 'react-icons/gi';
 import './Home.css';
 import ProductCard from "../components/ProductCard";
 
@@ -16,14 +19,14 @@ const Home = () => {
   ];
 
   return (
-    <>
-      <section className="hero-slider">
+    <main>
+      <section className="hero-slider" aria-labelledby="home-heading">
         <div className="hero-slide">
-          <img src={image1} alt="Indoor Plants" />
+          <img src={image1} alt="A bright collection of healthy indoor plants from GreenNest" fetchPriority="high" />
           <div className="hero-overlay"></div>
           <div className="hero-content">
             <p className="hero-subtitle">Welcome to GreenNest</p>
-            <h1 className="hero-title">Bring Nature Home</h1>
+            <h1 className="hero-title" id="home-heading">Bring Nature Home</h1>
             <p className="hero-description">
               Discover our collection of beautiful plants to transform your space
             </p>
@@ -51,31 +54,31 @@ const Home = () => {
           <p>Find exactly what you're looking for</p>
         </div>
         <div className="categories-grid">
-          <a href="/indoor" className="category-card">
-            <div className="category-icon">🌱</div>
+          <Link to="/indoor" className="category-card">
+            <div className="category-icon" aria-hidden="true"><FaLeaf /></div>
             <h3>Indoor Plants</h3>
             <p>Perfect for your home</p>
-          </a>
-          <a href="/outdoor" className="category-card">
-            <div className="category-icon">🌿</div>
+          </Link>
+          <Link to="/outdoor" className="category-card">
+            <div className="category-icon" aria-hidden="true"><FaTree /></div>
             <h3>Outdoor Plants</h3>
             <p>Garden & patio plants</p>
-          </a>
-          <a href="/seeds" className="category-card">
-            <div className="category-icon">🌾</div>
+          </Link>
+          <Link to="/seeds" className="category-card">
+            <div className="category-icon" aria-hidden="true"><FaSeedling /></div>
             <h3>Seeds</h3>
             <p>Grow from the beginning</p>
-          </a>
-          <a href="/pots" className="category-card">
-            <div className="category-icon">🏺</div>
+          </Link>
+          <Link to="/pots" className="category-card">
+            <div className="category-icon" aria-hidden="true"><GiFlowerPot /></div>
             <h3>Pots</h3>
             <p>Stylish plant containers</p>
-          </a>
-          <a href="/fertilizer" className="category-card">
-            <div className="category-icon">🧪</div>
+          </Link>
+          <Link to="/fertilizer" className="category-card">
+            <div className="category-icon" aria-hidden="true"><GiFertilizerBag /></div>
             <h3>Fertilizers</h3>
             <p>Plant nutrition & care</p>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -87,17 +90,17 @@ const Home = () => {
         </div>
         <div className="blog-grid">
           <article className="blog-card">
-            <div className="blog-icon">💧</div>
+            <div className="blog-icon" aria-hidden="true"><FaTint /></div>
             <h3>Watering Guide</h3>
             <p>Discover the perfect watering schedule for your plants to thrive and stay hydrated.</p>
           </article>
           <article className="blog-card">
-            <div className="blog-icon">☀️</div>
+            <div className="blog-icon" aria-hidden="true"><FaSun /></div>
             <h3>Sunlight Tips</h3>
             <p>Learn about light requirements for different plant types and indoor placement.</p>
           </article>
           <article className="blog-card">
-            <div className="blog-icon">🌡️</div>
+            <div className="blog-icon" aria-hidden="true"><FaTemperatureHigh /></div>
             <h3>Temperature Care</h3>
             <p>Maintain optimal temperature and humidity levels for your plant collection.</p>
           </article>
@@ -105,7 +108,7 @@ const Home = () => {
       </section>
 
       
-    </>
+    </main>
   );
 };
 

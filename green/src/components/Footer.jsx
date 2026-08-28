@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaLeaf } from 'react-icons/fa';
 import './Footer.css';
 
 const Footer = () => {
@@ -8,7 +9,7 @@ const Footer = () => {
       <div className="footer-container">
 
         <div className="footer-brand">
-          <h2>🌿 GreenNest</h2>
+          <h2><FaLeaf aria-hidden="true" /> GreenNest</h2>
           <p>
             Bringing nature closer to every home with premium indoor and outdoor plants.
           </p>
