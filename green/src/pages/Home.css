@@ -306,6 +306,7 @@ body{
 
 .category-card{
   background:linear-gradient(135deg,#f0fdf4 0%,#ecfdf5 100%);
+  color:#1b4332;
   padding:25px;
   border-radius:15px;
   text-align:center;
